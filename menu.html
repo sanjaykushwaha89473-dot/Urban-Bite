@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Urban Bite</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/integration.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+        <div class="container">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand logo" href="#">
+                Urban Bite
+            </a>
+
+            <!-- Mobile Menu Button -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navbar Links -->
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="menu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- Mobile Bottom Navbar -->
+
+    <div class="mobile-bottom-nav">
+
+        <a href="index.html" class="nav-item-mobile ">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+
+        <a href="about.html" class="nav-item-mobile">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>About</span>
+        </a>
+
+        <a href="menu.html" class="nav-item-mobile active-mobile">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Menu</span>
+        </a>
+
+        <a href="gallery.html" class="nav-item-mobile">
+            <i class="fa-solid fa-image"></i>
+            <span>Gallery</span>
+        </a>
+
+    </div>
+    <!-- Mobile Bottom Navbar  End -->
+
+    <!-- Right Floating Button -->
+
+    <!-- Navbar End -->
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="menu-hero">
+
+        <!-- DESKTOP VIDEO -->
+
+        <video autoplay muted loop playsinline class="hero-video desktop-video">
+
+            <source src="./videos/desktop.mp4" type="video/mp4">
+
+        </video>
+
+        <!-- MOBILE VIDEO -->
+
+        <video autoplay muted loop playsinline class="hero-video mobile-video">
+
+            <source src="./videos/mobile.mp4" type="video/mp4">
+
+        </video>
+
+
+        <!-- OVERLAY -->
+
+        <div class="hero-overlay"></div>
+
+        <!-- CONTENT -->
+
+        <div class="hero-content container text-center">
+
+            <h1>
+                Taste The Luxury
+            </h1>
+
+            <p>
+                Experience premium dining with cinematic flavors,
+                handcrafted dishes, and unforgettable ambience.
+            </p>
+
+            <a href="#menu" class="hero-btn">
+                Explore Menu
+            </a>
+
+        </div>
+
+    </section>
+    <!-- ================= CATEGORY SECTION ================= -->
+
+<section class="category-section">
+    <div class="container">
+
+    <!-- TITLE -->
+
+    <div class="section-heading text-center">
+
+                <h5 class="section-subtitle">
+                    Our Special
+                </h5>
+
+                <h2 class="section-title">
+                    Premium Dishes
+                </h2>
+
+            </div>
+
+</div>
+
+<div class="gold-line"></div>
+
+</section>
+<!-- ================= FOOD SECTION ================= -->
+
+<section class="food-section" id="menu">
+
+    <div class="container">
+
+        <p id="menuStatus" class="menu-status" role="status" aria-live="polite"></p>
+
+        <div class="row g-4" id="menuItems" aria-label="Restaurant menu">
+
+            <!-- CARD 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-img">
+
+                        <img src="./images/food/Royal Hyderabadi Biryani 🍗🍚.jpg" alt="Biryani">
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h3>
+                            Hyderabadi Biryani
+                        </h3>
+
+                        <p>
+                            Aromatic basmati rice layered with rich spices and tender meat.
+                        </p>
+
+                        <div class="price-btn">
+
+                            <span>
+                                ₹499
+                            </span>
+
+                            <button>
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-img">
+
+                        <img src="./images/food/Butter Chicken.jpg" alt="Butter Chicken">
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h3>
+                            Butter Chicken
+                        </h3>
+
+                        <p>
+                            Creamy tomato gravy infused with butter and Indian spices.
+                        </p>
+
+                        <div class="price-btn">
+
+                            <span>
+                                ₹399
+                            </span>
+
+                            <button>
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-img">
+
+                        <img src="./images/food/Paneer Tikka.jpg" alt="Paneer Tikka">
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h3>
+                            Paneer Tikka
+                        </h3>
+
+                        <p>
+                            Char-grilled paneer cubes marinated with rich Indian masala.
+                        </p>
+
+                        <div class="price-btn">
+
+                            <span>
+                                ₹349
+                            </span>
+
+                            <button>
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-img">
+
+                        <img src="./images/food/Tandoori.jpg" alt="Tandoori">
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h3>
+                            Tandoori Platter
+                        </h3>
+
+                        <p>
+                            Smoky tandoor specialties served with mint chutney.
+                        </p>
+
+                        <div class="price-btn">
+
+                            <span>
+                                ₹599
+                            </span>
+
+                            <button>
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 5 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-img">
+
+                        <img src="./images/food/Mughlai Kebab.jpg" alt="Kebab">
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h3>
+                            Mughlai Kebabs
+                        </h3>
+
+                        <p>
+                            Juicy royal kebabs infused with Mughlai flavors and spices.
+                        </p>
+
+                        <div class="price-btn">
+
+                            <span>
+                                ₹449
+                            </span>
+
+                            <button>
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 6 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-img">
+
+                        <img src="./images/food/Royal Falooda.jpg" alt="Falooda">
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h3>
+                            Royal Falooda
+                        </h3>
+
+                        <p>
+                            Saffron infused falooda topped with nuts and kulfi.
+                        </p>
+
+                        <div class="price-btn">
+
+                            <span>
+                                ₹299
+                            </span>
+
+                            <button>
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CHEF SPECIAL SECTION ================= -->
+
+<dialog class="order-dialog" id="orderDialog" aria-labelledby="orderDialogTitle">
+    <form id="orderForm" class="order-form">
+        <button class="order-dialog-close" type="button" id="closeOrderDialog" aria-label="Close order form">&times;</button>
+        <span class="order-label">PLACE AN ORDER</span>
+        <h2 id="orderDialogTitle">Complete your order</h2>
+        <p id="selectedDish" class="selected-dish"></p>
+        <label for="customerName">Your name</label>
+        <input id="customerName" name="customerName" type="text" maxlength="100" required>
+        <label for="customerPhone">Phone number</label>
+        <input id="customerPhone" name="phone" type="tel" maxlength="30" required>
+        <label for="orderQuantity">Quantity</label>
+        <input id="orderQuantity" name="quantity" type="number" min="1" max="20" value="1" required>
+        <p id="orderStatus" class="order-status" role="status" aria-live="polite"></p>
+        <button class="order-submit" type="submit">Submit order request</button>
+    </form>
+</dialog>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1514 @@
+/* =========================
+   About Hero Section
+========================= */
+
+.about-hero-section {
+    background: url('../images/about/about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+}
+
+.about-hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.about-subtitle {
+    color: orange;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about-main-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    line-break: auto;
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-breadcrumb {
+    margin-top: 25px;
+    color: #ddd;
+    font-size: 18px;
+}
+/* ================= STORY SECTION ================= */
+
+.story-section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ================= STORY video SECTION ================= */
+
+/* MOBILE VIDEO HIDE */
+.mobile-video{
+    display: none;
+}
+.story-video{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* =================DARK OVERLAY ================= */
+.story-overlay{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.72);
+
+    z-index: -1;
+}
+/* ================= CONTENT LAYOUT================= */
+.story-container{
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 100px;
+
+    color: white;
+}
+/* ================= LEFT SIDE ENTRY ANIMATION================= */
+.story-left{
+    flex: 1;
+    animation: leftEntry 1.5s ease;
+}
+
+.story-left span{
+    color: #ffb400;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.story-left h2{
+    font-size: 4rem;
+    margin-top: 20px;
+    line-break: auto;
+    line-height: 1.2;
+}
+/* ================= RIGHT SIDE ENTRY ANIMATION================= */
+.story-right{
+    flex: 1;
+    backdrop-filter: blur(5px);
+
+background: rgba(0,0,0,0.2);
+
+padding: 30px;
+
+border-radius: 20px;
+
+    animation: rightEntry 1.5s ease;
+}
+
+.story-right p{
+    color: #ddd;
+
+    line-height: 1.9;
+    line-break: auto;
+
+    margin-bottom: 25px;
+}
+
+.story-right a{
+    display: inline-block;
+
+    padding: 14px 35px;
+
+    background: #ffb400;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 40px;
+
+    transition: 0.4s ease;
+}
+
+.story-right a:hover{
+    transform: translateY(-5px);
+}
+/* ================= MAIN DIFFERENT ANIMATIONS================= */
+@keyframes leftEntry{
+
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes rightEntry{
+
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+/* ================= EXPERIENCE SECTION ================= */
+
+.experience-section{
+
+    width: 100%;
+
+    padding: 100px 8%;
+
+    background: linear-gradient(
+        to bottom,
+        #050505,
+        #111
+    );
+}
+.experience-container{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap: 30px;
+}
+.experience-card{
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(10px);
+
+    padding: 50px 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    transition: 0.5s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+.experience-card:hover{
+
+    transform: translateY(-15px);
+
+    border-color: #ffb400;
+
+    box-shadow:
+    0 0 25px rgba(255,180,0,0.4);
+}
+.experience-card h2{
+
+    font-size: 4rem;
+
+    color: #ffb400;
+
+    margin-bottom: 15px;
+
+    transition: 0.5s ease;
+}
+
+.experience-card:hover h2{
+
+    transform: scale(1.1);
+}
+.experience-card p{
+
+    color: #fff;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+}
+.experience-card::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+
+    left: -100%;
+
+    width: 300px;
+    height: 300px;
+
+    background: rgba(255,255,255,0.05);
+
+    transform: rotate(45deg);
+
+    transition: 0.8s ease;
+}
+
+.experience-card:hover::before{
+
+    top: 100%;
+    left: 100%;
+}
+.plus-icon{
+
+    font-size: 28px;
+
+    color: white;
+
+    margin-left: 6px;
+
+    vertical-align: middle;
+
+    transition: 0.4s ease;
+}
+.experience-card:hover .plus-icon{
+
+    color: #ffb400;
+
+    transform: scale(1.2);
+}
+/* ================= TIMELINE SECTION ================= */
+
+.timeline-section{
+
+    width: 100%;
+
+    padding: 120px 8%;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #0a0a0a,
+        #111
+    );
+
+    position: relative;
+
+    overflow: hidden;
+    background:
+radial-gradient(
+circle at top left,
+rgba(255,180,0,0.08),
+transparent 30%
+),
+
+radial-gradient(
+circle at bottom right,
+rgba(255,180,0,0.05),
+transparent 30%
+),
+
+linear-gradient(
+to bottom,
+#0a0a0a,
+#111
+);
+}
+.timeline-section::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    background:
+    rgba(255,180,0,0.08);
+
+    filter: blur(120px);
+
+    top: 20%;
+
+    left: -10%;
+
+    z-index: 0;
+}
+.timeline-section::after{
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background:
+    rgba(255,180,0,0.05);
+
+    filter: blur(120px);
+
+    bottom: 0;
+
+    right: -10%;
+
+    z-index: 0;
+}
+.timeline-container,
+.timeline-heading{
+
+    position: relative;
+
+    z-index: 2;
+}
+.timeline-heading{
+
+    text-align: center;
+
+    margin-bottom: 100px;
+}
+
+.timeline-heading span{
+
+    color: #ffb400;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+}
+
+.timeline-heading h2{
+
+    color: white;
+
+    font-size: 4rem;
+
+    margin-top: 20px;
+}
+.timeline-container{
+
+    position: relative;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+.timeline-line{
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    transform: translateX(-50%);
+
+    width: 4px;
+
+    height: 100%;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #ffb400,
+        rgba(255,180,0,0.2)
+    );
+
+    border-radius: 20px;
+}
+.timeline-item{
+
+    position: relative;
+
+    width: 50%;
+
+    padding: 40px 60px;
+
+    margin-bottom: 80px;
+}
+.timeline-item.left{
+
+    left: 0;
+
+    text-align: right;
+}
+
+.timeline-item.right{
+
+    left: 50%;
+}
+.timeline-dot{
+
+    position: absolute;
+
+    top: 50px;
+}
+
+.timeline-item.left .timeline-dot{
+
+    right: -12px;
+}
+
+.timeline-item.right .timeline-dot{
+
+    left: -12px;
+}
+
+.timeline-dot::before{
+
+    content: "";
+
+    width: 25px;
+    height: 25px;
+
+    background: #ffb400;
+
+    border-radius: 50%;
+
+    display: block;
+
+    box-shadow:
+    0 0 20px rgba(255,180,0,0.8);
+
+    animation:
+    pulseDot 2s infinite;
+}
+.timeline-card{
+
+    background:
+    rgba(255,255,255,0.05);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(12px);
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    transition: 0.5s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+.timeline-card:hover{
+
+    transform: translateY(-12px);
+
+    border-color: #ffb400;
+
+    box-shadow:
+    0 0 30px rgba(255,180,0,0.3);
+}
+.timeline-card h3{
+
+    color: #ffb400;
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+.timeline-card h4{
+
+    color: white;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 20px;
+}
+
+.timeline-card p{
+
+    color: #d6d6d6;
+
+    line-height: 1.9;
+    line-break: anywhere;
+    font-size: 16px;
+}
+.timeline-card::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+
+    left: -100%;
+
+    width: 300px;
+    height: 300px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    transform: rotate(45deg);
+
+    transition: 0.8s ease;
+}
+
+.timeline-card:hover::before{
+
+    top: 100%;
+    left: 100%;
+}
+@keyframes pulseDot{
+
+    0%{
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50%{
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+}
+/* ================= REVIEW SECTION ================= */
+
+.review-section{
+
+    width: 100%;
+
+    padding: 120px 8%;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #0b0b0b,
+        #111
+    );
+
+    position: relative;
+
+    overflow: hidden;
+}
+.review-heading{
+
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.review-heading span{
+
+    color: #ffb400;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+}
+
+.review-heading h2{
+
+    color: white;
+
+    font-size: 4rem;
+
+    margin-top: 20px;
+}
+#reviewCarousel{
+
+    position: relative;
+}
+.review-cards{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+}
+.review-card{
+
+    width: 320px;
+
+    min-height: 420px;
+
+    background:
+    rgba(255,255,255,0.04);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
+
+    padding: 35px;
+
+    border-radius: 28px;
+
+    transition: 0.5s ease;
+
+    opacity: 0.35;
+
+    transform: scale(0.88);
+
+    position: relative;
+
+    overflow: hidden;
+}
+.active-review{
+
+    transform: scale(1);
+
+    opacity: 1;
+
+    border-color: #ffb400;
+
+    box-shadow:
+    0 0 45px rgba(255,180,0,0.25);
+
+    z-index: 5;
+}
+.active-review:hover{
+
+    transform: scale(1.03);
+
+    box-shadow:
+    0 0 55px rgba(255,180,0,0.35);
+}
+.review-card:hover{
+
+    opacity: 0.8;
+
+    transform: scale(0.95);
+
+    border-color: rgba(255,180,0,0.4);
+}
+.review-top{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.review-top img{
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid #ffb400;
+}
+.review-top h3{
+
+    color: white;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 5px;
+}
+
+.review-top span{
+
+    color: #bdbdbd;
+
+    font-size: 14px;
+}
+.review-stars{
+
+    margin-bottom: 20px;
+}
+
+.review-stars i{
+
+    color: #ffb400;
+
+    margin-right: 5px;
+
+    font-size: 18px;
+}
+.review-card p{
+
+    color: #d8d8d8;
+
+    line-height: 1.9;
+
+    font-size: 15px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+
+    width: 60px;
+    height: 60px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.05);
+
+    border-radius: 50%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    opacity: 1;
+
+    backdrop-filter: blur(10px);
+}
+.carousel-control-prev i,
+.carousel-control-next i{
+
+    color: white;
+
+    font-size: 22px;
+
+    transition: 0.4s ease;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+
+    background: #ffb400;
+}
+
+.carousel-control-prev:hover i,
+.carousel-control-next:hover i{
+
+    color: black;
+}
+.carousel-indicators{
+
+    bottom: -70px;
+}
+.carousel-indicators button{
+
+    width: 12px !important;
+    height: 12px !important;
+
+    border-radius: 50%;
+
+    background: white !important;
+
+    opacity: 0.4;
+
+    margin: 0 8px !important;
+
+    transition: 0.4s ease;
+}
+
+.carousel-indicators .active{
+
+    background: #ffb400 !important;
+
+    opacity: 1;
+    transform: scale(1.4);
+
+    box-shadow:
+    0 0 15px rgba(255,180,0,0.6);
+}
+/* ================= RESERVATION CTA ================= */
+
+.reservation-cta{
+
+    width: 100%;
+
+    min-height: 90vh;
+
+    background:
+    url("../images/food/reservation-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 120px 8%;
+}
+.reservation-overlay{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.82)
+    );
+
+    top: 0;
+    left: 0;
+}
+.reservation-content{
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    max-width: 850px;
+
+    padding: 70px 60px;
+
+    background:
+    rgba(255,255,255,0.04);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(18px);
+
+    border-radius: 30px;
+
+    box-shadow:
+    0 0 45px rgba(255,180,0,0.12);
+}
+.reservation-content span{
+
+    color: #ffb400;
+
+    letter-spacing: 5px;
+
+    font-size: 14px;
+}
+.reservation-content h2{
+
+    color: white;
+
+    font-size: 5rem;
+
+    line-height: 1.2;
+
+    margin-top: 25px;
+
+    margin-bottom: 30px;
+}
+.reservation-content p{
+
+    color: #d8d8d8;
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin-bottom: 45px;
+}
+.reservation-btn{
+
+    display: inline-block;
+
+    padding: 18px 50px;
+
+    background: #ffb400;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    border-radius: 50px;
+
+    transition: 0.4s ease;
+
+    box-shadow:
+    0 0 25px rgba(255,180,0,0.35);
+}
+.reservation-btn:hover{
+
+    transform: translateY(-5px);
+
+    background: white;
+
+    color: black;
+
+    box-shadow:
+    0 0 35px rgba(255,255,255,0.25);
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+@media(max-width:576px) {
+    /* =========================
+      About Hero Mobile
+    ========================= */
+
+    .about-hero-section {
+        height: 60vh;
+        background-position: center;
+    }
+
+    .about-main-title {
+
+        font-size: 26px;
+        line-height: 1.3;
+        max-width: 100%;
+
+    }
+
+    .about-subtitle {
+
+        font-size: 14px;
+        letter-spacing: 2px;
+
+    }
+
+    .about-breadcrumb {
+
+        font-size: 15px;
+        margin-top: 15px;
+
+    }
+     /* =========================
+       Video Hero Mobile
+    ========================= */
+    .desktop-video{
+    display: none;
+}
+
+.mobile-video{
+    display: block;
+}
+     .story-video{
+    object-position: center;
+    object-fit: cover;
+    object-position: center;
+    }
+    .story-section{
+        min-height: 100vh;
+        padding: 120px 20px;
+    }
+
+    .story-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .story-left h2{
+        font-size: 2.5rem;
+        line-height: 1.2;
+        line-break: auto;
+    }
+
+    .story-right p{
+        font-size: 18px;
+        line-height: 2;
+        line-break: auto;
+    }
+    /* ================= EXPERIENCE SECTION ================= */
+     .experience-container{
+
+        grid-template-columns:1fr;
+    }
+
+    .experience-card h2{
+
+        font-size: 3rem;
+    }
+
+      .experience-card{
+
+        transform: translateY(-8px);
+
+        border-color: #ffb400;
+
+        box-shadow:
+        0 0 25px rgba(255,180,0,0.3);
+    }
+
+    .experience-card i{
+
+        color: #fff;
+    }
+
+    .plus-icon{
+
+        color: #ffb400;
+    }
+    /* ================= TIMELINE SECTION ================= */
+    
+    .timeline-section{
+
+        padding: 100px 20px;
+    }
+
+    .timeline-heading{
+
+        margin-bottom: 70px;
+    }
+
+    .timeline-heading h2{
+
+        font-size: 2.5rem;
+
+        line-height: 1.3;
+    }
+
+    /* LINE */
+
+    .timeline-line{
+
+        left: 20px;
+    }
+
+    /* ITEMS */
+
+    .timeline-item{
+
+        width: 100%;
+
+        padding-left: 55px;
+
+        padding-right: 0;
+
+        margin-bottom: 60px;
+
+        left: 0 !important;
+    }
+
+    /* DOT */
+
+    .timeline-dot{
+
+        left: 8px !important;
+    }
+
+    /* CARD */
+
+    .timeline-card{
+
+        width: 100%;
+
+        padding: 25px;
+
+        border-radius: 20px;
+    }
+
+    /* TEXT */
+
+    .timeline-card h3{
+
+        font-size: 2.2rem;
+    }
+
+    .timeline-card h4{
+
+        font-size: 1.5rem;
+
+        line-height: 1.4;
+    }
+
+    .timeline-card p{
+
+        font-size: 15px;
+        line-break:anywhere;
+        line-height: 1.9;
+    }
+    /* ================= REVIEW SECTION ================= */
+     .review-section{
+
+        padding: 80px 5% 120px;
+    }
+
+    .review-heading{
+
+        margin-bottom: 50px;
+    }
+
+    .review-heading h2{
+
+        font-size: 2.8rem;
+        line-height: 1.3;
+        margin-bottom: 0px;
+    }
+
+    .review-showcase{
+
+        position: relative;
+
+        justify-content: center;
+    }
+
+    .review-cards{
+        display: flex;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    margin-top: -50px;
+
+    }
+
+    /* HIDE SIDE CARDS */
+
+    .side-card{
+
+        display: none;
+    }
+
+    /* CENTER CARD */
+
+    .active-review{
+
+        width: 100%;
+        margin: auto;
+        max-width: 320px;
+
+        min-height: auto;
+
+        transform: scale(1);
+
+        opacity: 1;
+
+        padding: 30px;
+    }
+
+    .active-review:hover{
+
+        transform: scale(1.02);
+    }
+    .review-card{
+
+    flex: 0 0 auto;
+}
+
+    .review-top{
+
+        gap: 12px;
+    }
+
+    .review-top img{
+
+        width: 55px;
+        height: 55px;
+    }
+
+    .review-top h3{
+
+        font-size: 1.2rem;
+    }
+
+    .review-card p{
+
+        font-size: 14px;
+        line-break: anywhere;
+        line-height: 1.9;
+         word-break: normal;
+
+    overflow-wrap: break-word;
+    }
+
+
+    /* BUTTONS */
+    .carousel-item{
+
+    width: 100%;
+}
+
+    .carousel-control-prev,
+    .carousel-control-next{
+
+        width: 40px;
+        height: 40px;
+        top: 50%;
+         background:
+    rgba(255,255,255,0.12);
+
+    border:
+    1px solid rgba(255,255,255,0.18);
+
+    backdrop-filter: blur(15px);
+
+    z-index: 10;
+    }
+
+    .carousel-control-prev{
+
+        left: -5px;
+    }
+
+    .carousel-control-next{
+
+        right: -5px;
+    }
+
+    .carousel-control-prev i,
+    .carousel-control-next i{
+
+        font-size: 15px;
+    }
+
+    /* DOTS */
+
+    .carousel-indicators{
+
+        bottom: -20px;
+    }
+     /* ================= RESERVATION CTA ================= */
+    .reservation-cta{
+
+        min-height: auto;
+
+        padding: 100px 5%;
+    }
+
+    .reservation-content{
+
+        padding: 50px 30px;
+
+        border-radius: 25px;
+    }
+
+    .reservation-content span{
+
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+    .reservation-content h2{
+
+        font-size: 2.2rem;
+        line-break: anywhere;
+        line-height: 1.3;
+    }
+
+    .reservation-content p{
+
+        font-size: 15px;
+
+        line-height: 1.9;
+    }
+
+    .reservation-btn{
+
+        padding: 16px 38px;
+
+        font-size: 15px;
+    }
+
+}
+/* =========================
+   Tablet Responsive
+========================= */
+@media(min-width:768px) and (max-width:1023px){
+     .story-video{
+         top: 0;
+        left: 0;
+
+        width: 100%;
+       height: 100%;
+
+        object-fit: cover;
+       object-position: center;
+    }
+
+    .story-container{
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 50px;
+
+        padding: 80px 40px;
+    }
+
+    .story-left h2{
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+    .story-right{
+
+        max-width: 700px;
+
+        padding: 40px;
+
+        border-radius: 20px;
+
+        background: rgba(0,0,0,0.35);
+
+        backdrop-filter: blur(8px);
+    }
+
+    .story-right a{
+
+        padding: 12px 28px;
+
+        font-size: 15px;
+    }
+    /* ================= EXPERIENCE SECTION ================= */
+      .experience-container{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+      .experience-card{
+
+        box-shadow:
+        0 0 10px rgba(255,180,0,0.15);
+    }
+    /* ================= TIMELINE SECTION ================= */
+      .timeline-line{
+        left: 30px;
+    }
+
+    .timeline-item{
+
+        width: 100%;
+
+        padding-left: 90px;
+
+        padding-right: 20px;
+
+        text-align: left;
+
+        left: 0 !important;
+    }
+
+    .timeline-dot{
+
+        left: 18px !important;
+    }
+
+    .timeline-heading h2{
+
+        font-size: 3rem;
+    }
+    .timeline-card p{
+        line-break:anywhere;
+    }
+    /* ================= REVIEW SECTION ================= */
+     .review-section{
+
+        padding: 100px 5%;
+    }
+
+    .review-heading h2{
+
+        font-size: 3rem;
+    }
+
+    .review-cards{
+
+        gap: 20px;
+    }
+
+    .review-card{
+
+        width: 260px;
+
+        min-height: 380px;
+
+        padding: 28px;
+    }
+
+    .active-review{
+
+        transform: scale(0.95);
+    }
+
+    .active-review:hover{
+
+        transform: scale(1);
+    }
+
+    .carousel-control-prev{
+
+        left: -20px;
+    }
+
+    .carousel-control-next{
+
+        right: -20px;
+    }
+
+    .review-top img{
+
+        width: 60px;
+        height: 60px;
+    }
+
+    .review-card p{
+
+        font-size: 14px;
+        line-break: anywhere;
+        line-height: 1.8;
+    } 
+    /* ================= RESERVATION CTA ================= */
+    .reservation-content{
+
+        padding: 60px 40px;
+    }
+
+    .reservation-content h2{
+
+        font-size: 4rem;
+    }
+
+    .reservation-content p{
+
+        font-size: 16px;
+    }
+
+
+
+}

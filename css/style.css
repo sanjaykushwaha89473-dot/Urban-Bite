@@ -1,0 +1,810 @@
+/* =========================
+   Global Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange !important;
+    letter-spacing: 2px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    margin-left: 20px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: orange !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: orange !important;
+}
+
+
+/* =========================
+   Mobile Bottom Navbar
+========================= */
+
+.mobile-bottom-nav {
+    display: none;
+}
+
+/* Floating Buttons */
+.floating-wrapper-right {
+    display: none;
+}
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero-section {
+    background: url('../images/hero/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #ddd;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+.hero-btn1 {
+    background-color: orange;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 50px;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.hero-btn1:hover {
+    background-color: white;
+    color: black;
+}
+
+.hero-btn2 {
+    border: 2px solid orange;
+    color: orange;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.hero-btn2:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* =========================
+   About Section
+========================= */
+
+.about-section {
+    padding: 120px 0;
+    background: linear-gradient(to right, #111, #181818);
+    overflow: hidden;
+}
+
+/* About Image */
+
+.about-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 25px;
+    transition: 0.5s;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Hover */
+
+.about-image:hover img {
+    transform: scale(1.08);
+}
+
+/* About Content */
+
+.about-content {
+    padding-left: 40px;
+}
+
+.section-subtitle {
+    color: orange;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    color: white;
+}
+
+.about-text {
+    color: #bbb;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+    line-break: anywhere;
+}
+
+/* About Button */
+
+.about-btn {
+    background-color: orange;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.4s;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
+}
+
+.about-btn:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-5px);
+}
+
+/* =========================
+   Featured Dishes
+========================= */
+
+.featured-section {
+    padding: 120px 0;
+    background-color: #111;
+}
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+/* Food Card */
+
+.food-card {
+    background-color: #1a1a1a;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.4s;
+    height: 100%;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 165, 0, 0.15);
+}
+
+/* Food Image */
+
+.food-image {
+    overflow: hidden;
+}
+
+.food-image img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.food-card:hover .food-image img {
+    transform: scale(1.1);
+}
+
+/* Food Content */
+
+.food-content {
+    padding: 25px;
+}
+
+.food-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.food-content p {
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Food Info */
+
+.food-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: orange;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.rating {
+    color: gold;
+    font-size: 16px;
+}
+
+/* Menu Button */
+
+.menu-btn {
+    background-color: orange;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.menu-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* =========================
+   Gallery Section
+========================= */
+
+.gallery-section {
+    padding: 100px 0 45px;
+    background: linear-gradient(to right, #111, #181818);
+}
+
+/* Gallery Item */
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+/* Hover Effect */
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Gallery Button */
+
+.gallery-btn {
+    background-color: orange;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.gallery-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* =========================
+   Footer Section
+========================= */
+
+.footer-section {
+    background-color: #0d0d0d;
+    padding: 100px 0 40px;
+}
+
+.footer-logo {
+    color: orange;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    color: #bbb;
+    line-height: 1.8;
+    max-width: 320px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links li a:hover {
+    color: orange;
+    padding-left: 5px;
+}
+
+.footer-contact {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.footer-contact i {
+    color: orange;
+    margin-right: 10px;
+}
+
+/* Social Icons */
+
+.footer-social {
+    margin-top: 50px;
+}
+
+.footer-social a {
+    width: 45px;
+    height: 45px;
+    background-color: #1a1a1a;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.footer-social a:hover {
+    background-color: orange;
+    transform: translateY(-5px);
+}
+
+/* Bottom */
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #222;
+    padding-top: 25px;
+}
+
+.footer-bottom p {
+    color: #777;
+    margin: 0;
+}
+
+
+/* =========================
+   Tablet Responsive
+========================= */
+
+@media(max-width:991px) {
+
+    /* Navbar */
+
+    .custom-navbar {
+        background-color: black;
+    }
+
+    .navbar-collapse {
+        background-color: #1a1a1a;
+        padding: 20px;
+        margin-top: 15px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    /* Hero */
+
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    /* =========================
+       About Section
+    ========================= */
+    .about-section {
+        padding: 90px 30px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .about-content {
+        padding-left: 20px;
+    }
+
+    .section-subtitle {
+        padding-top: 20px;
+    }
+
+    /* =========================
+      Featured Dishes
+    ========================= */
+    .featured-section {
+        padding: 90px 30px;
+    }
+
+    /* =========================
+   Gallery Section
+========================= */
+    .gallery-section {
+        padding: 90px 30px;
+    }
+
+    /* =========================
+   Footer Section
+========================= */
+    .footer-section {
+        padding: 80px 30px 40px;
+    }
+
+    .footer-box {
+        margin-bottom: 40px;
+    }
+
+    .footer-section .row {
+        row-gap: 30px;
+    }
+
+
+}
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media(max-width:576px) {
+
+    /* Hide Top Navbar */
+
+    .navbar-nav,
+    .navbar-toggler {
+        display: none;
+    }
+
+    /* Hero Section */
+
+    .hero-section {
+        text-align: center;
+        padding: 0 10px;
+        background-position: 65% center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero-title {
+        font-size: 45px;
+        line-height: 1.3;
+        line-break: anywhere;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    /* Hero Buttons */
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-btn1,
+    .hero-btn2 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Bottom Mobile Navbar */
+
+    .mobile-bottom-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 92%;
+        background-color: #1b1b1b;
+        padding: 12px 10px;
+        border-radius: 40px;
+        z-index: 999;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-item-mobile {
+        position: relative;
+        text-decoration: none;
+        color: #aaa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 13px;
+        transition: 0.3s;
+    }
+
+
+    .nav-item-mobile i {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .active-mobile {
+        color: white !important;
+    }
+
+    .active-mobile i {
+        background-color: orange;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40px;
+        border: 5px solid #111;
+        box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+    }
+
+    /* =========================
+       About Section
+    ========================= */
+    .about-section {
+        text-align: center;
+        padding: 70px 20px;
+    }
+
+    .about-image {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 34px;
+
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+
+    .about-text {
+        font-size: 15px;
+    }
+
+    .about-btn {
+        width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* =========================
+   Featured Dishes
+========================= */
+    .featured-section {
+        padding: 70px 20px;
+    }
+
+    .food-content h3 {
+        font-size: 24px;
+    }
+
+    .menu-btn {
+        width: 100%;
+    }
+
+    .section-heading .section-title {
+        font-size: 32px;
+    }
+
+    /* =========================
+   Gallery Section
+========================= */
+    .gallery-section {
+        padding: 50px 20px;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+
+    .gallery-btn {
+        width: 100%;
+    }
+
+    .gallery-section .section-title {
+        font-size: 28px;
+    }
+
+    /* =========================
+   Footer Section
+========================= */
+    .footer-section {
+        text-align: center;
+        padding: 50px 20px 110px;
+    }
+
+    .footer-text {
+        margin: auto;
+        line-break: anywhere;
+    }
+
+    .footer-social a {
+        margin: 8px;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+
+    .footer-box {
+        margin-bottom: -5px;
+    }
+
+    .footer-section .footer-bottom p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    /* =========================
+     Floating Side Buttons
+    ========================= */
+    .floating-wrapper-right {
+
+        display: block;
+        position: fixed;
+        z-index: 999;
+        bottom: 115px;
+
+    }
+
+    /* Right Side */
+
+    .floating-wrapper-right {
+        right: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    /* Floating Button */
+
+    .floating-btn {
+
+        width: 36px;
+        height: 36px;
+
+        background-color: orange;
+        color: white;
+
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+
+        font-size: 14px;
+
+        box-shadow: 0 0 15px rgba(255, 165, 0, 0.4);
+
+        animation: pulseFloat 1.5s infinite;
+
+    }
+
+    /* Hover */
+
+    .floating-btn:hover {
+
+        background-color: white;
+        color: black;
+    }
+
+}
+
+/* Animation */
+
+@keyframes pulseFloat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.18);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}

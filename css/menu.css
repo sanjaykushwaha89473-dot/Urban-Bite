@@ -1,0 +1,830 @@
+body{
+    background:#0b0b0b;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+}
+
+/* ================= HERO ================= */
+
+.menu-hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* VIDEO */
+
+.hero-video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* OVERLAY */
+
+.hero-overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(1.5px);
+}
+
+/* CONTENT */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    top: 130px;          /* isko badha kar aur neeche kar sakte ho (e.g. 70px, 90px) */
+}
+
+.hero-content h1{
+    font-size:5rem;
+    font-weight:700;
+    color:#f5c76b;
+
+    text-shadow:0 0 20px #f5c76b;
+
+    margin-bottom:40px;
+
+    animation:fadeDown 1.2s ease;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+
+    color:#ddd;
+    line-height:1.8;
+
+    font-size:18px;
+
+    margin-bottom:5px;
+
+    animation:fadeUp 1.5s ease;
+}
+
+/* BUTTON */
+
+.hero-btn{
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:#f5c76b;
+    color:black;
+
+    text-decoration:none;
+    font-weight:600;
+
+    border-radius:40px;
+
+    transition:0.4s;
+
+    animation:zoomIn 1.8s ease;
+}
+
+.hero-btn:hover{
+    background:white;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px #f5c76b;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+        opacity:0;
+        transform:scale(0.7);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+.hero-video{
+   position:absolute;
+   top:0;
+   left:0;
+
+   width:100%;
+   height:100%;
+
+   object-fit:cover;
+}
+
+/* MOBILE VIDEO HIDE */
+
+.mobile-video{
+   display:none;
+}
+/* ================= CATEGORY SECTION ================= */
+
+.category-section{
+    padding:50px 0;
+    background:#0b0b0b;
+    margin-top:50px;
+}
+
+/* TITLE */
+
+.section-title h2{
+
+    color:#f5c76b;
+
+    font-size:3rem;
+
+    font-weight:700px;
+
+    margin-bottom:10px;
+
+    text-shadow:0 0 15px rgba(245,199,107,0.4);
+}
+
+.section-title p{
+
+    color:#aaa;
+    
+    max-width:800px;
+    margin:auto;
+    
+    line-height:1.8;
+}
+
+/* CATEGORY TABS */
+
+.category-tabs{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+}
+
+/* BUTTON */
+
+.category-tabs button{
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,0.05);
+
+    color:#f5c76b;
+
+    border:1px solid rgba(245,199,107,0.2);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.4s;
+}
+
+/* HOVER */
+
+.category-tabs button:hover,
+.category-tabs .active{
+
+    background:#f5c76b;
+
+    color:black;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 20px rgba(245,199,107,0.5);
+
+}
+.gold-line{
+
+   width:120px;
+   height:3px;
+
+   background:#f5c76b;
+
+   margin:30px auto;
+
+   border-radius:10px;
+
+   box-shadow:0 0 15px #f5c76b;
+
+}
+/* ================= FOOD SECTION ================= */
+
+.food-section{
+
+     padding:10px 0 80px;
+
+    background:#0b0b0b;
+}
+
+/* CARD */
+
+.food-card{
+
+    background:rgba(255,255,255,0.04);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(245,199,107,0.15);
+
+    transition:0.5s;
+
+    height:100%;
+
+    backdrop-filter:blur(10px);
+}
+
+/* HOVER */
+
+.food-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px rgba(245,199,107,0.35);
+}
+
+/* IMAGE */
+
+.food-img{
+
+    overflow:hidden;
+}
+
+.food-img img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    transition:0.5s;
+}
+
+/* IMAGE ZOOM */
+
+.food-card:hover img{
+
+    transform:scale(1.08);
+}
+
+/* CONTENT */
+
+.food-content{
+
+    padding:25px;
+}
+
+.food-content h3{
+
+    color:#f5c76b;
+
+    font-size:1.5rem;
+
+    margin-bottom:15px;
+}
+
+.food-content p{
+
+    color:#aaa;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+}
+
+/* PRICE + BUTTON */
+
+.price-btn{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.price-btn span{
+
+    color:#fff;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+}
+
+/* BUTTON */
+
+.price-btn button{
+
+    border:none;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:#f5c76b;
+
+    color:black;
+
+    font-weight:600;
+
+    transition:0.4s;
+}
+
+/* BUTTON HOVER */
+
+.price-btn button:hover{
+
+    background:white;
+
+    transform:scale(1.05);
+}
+/* ================= CHEF BANNER ================= */
+
+.chef-banner{
+
+    position:relative;
+
+    padding:140px 0;
+
+    background:url('../images/gallery/Indian\ luxury\ restaurant.jpg') no-repeat;
+
+    background-size:cover;
+
+    background-position:center;
+
+    overflow:hidden;
+    margin-top:40px;
+}
+
+/* OVERLAY */
+
+.chef-overlay{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.7);
+}
+
+/* CONTENT */
+
+.chef-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:700px;
+}
+
+/* SMALL TEXT */
+
+.chef-content span{
+
+    color:#f5c76b;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+}
+
+/* HEADING */
+
+.chef-content h2{
+
+    color:white;
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    margin:20px 0;
+
+    line-height:1.2;
+
+    text-shadow:0 0 20px rgba(245,199,107,0.4);
+}
+
+/* PARAGRAPH */
+
+.chef-content p{
+
+    color:#ddd;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+    max-width:600px;
+}
+
+/* BUTTON */
+
+.chef-content a{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:#f5c76b;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:0.4s;
+}
+
+/* HOVER */
+
+.chef-content a:hover{
+
+    background:white;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 20px rgba(245,199,107,0.5);
+}
+/* ================= RESERVATION STRIP ================= */
+
+.reservation-strip{
+
+    padding:90px 0;
+
+    background:#0b0b0b;
+
+    text-align:center;
+}
+
+/* CONTENT */
+
+.reservation-content h2{
+
+    color:#f5c76b;
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    text-shadow:0 0 15px rgba(245,199,107,0.4);
+}
+
+.reservation-content p{
+
+    color:#aaa;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+}
+
+/* BUTTON */
+
+.reservation-content a{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:#f5c76b;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:0.4s;
+}
+
+/* HOVER */
+
+.reservation-content a:hover{
+
+    background:white;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 20px rgba(245,199,107,0.5);
+}
+/* ================= FOOTER ================= */
+
+.footer{
+
+    background:#050505;
+
+    padding:60px 0 20px;
+
+    border-top:1px solid rgba(245,199,107,0.2);
+}
+
+/* LOGO */
+
+.footer-logo{
+
+    color:#f5c76b;
+
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+/* TEXT */
+
+.footer-text{
+
+    color:#999;
+
+    line-height:1.9;
+
+    max-width:320px;
+}
+
+/* HEADINGS */
+
+.footer h4{
+
+    color:#f5c76b;
+
+    margin-bottom:25px;
+
+    font-size:1.2rem;
+}
+
+/* LIST */
+
+.footer ul{
+
+    padding:0;
+
+    list-style:none;
+}
+
+.footer ul li{
+
+    margin-bottom:14px;
+
+    color:#aaa;
+}
+
+/* LINKS */
+
+.footer ul li a{
+
+    color:#aaa;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.footer ul li a:hover{
+
+    color:#f5c76b;
+
+    padding-left:5px;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+
+    text-align:center;
+}
+
+.footer-bottom p{
+
+    color:#777;
+
+    margin:0;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:576px){
+
+    .hero-content h1{
+         font-size:3rem;
+      line-height:1.2;
+    }
+    .hero-content{
+   padding:0 10px;
+}
+    .hero-content p{
+        font-size:14px;
+        padding:0 10px;
+    }
+    .menu-hero{
+      height:100vh;
+   }
+    .desktop-video{
+      display:none;
+   }
+
+   .mobile-video{
+      display:block;
+   }
+
+   /* ================= CATEGORY SECTION ================= */
+   .section-title h2{
+        font-size:2.2rem;
+    }
+    .section-title p{
+   font-size:16px;
+}
+
+    .category-tabs{
+        gap:10px;
+    }
+
+    .category-tabs button{
+        padding:10px 20px;
+        font-size:14px;
+    }
+    /* ================= FOOD SECTION ================= */
+   
+
+    .food-content h3{
+
+        font-size:1.3rem;
+    }
+
+    .food-content p{
+
+        font-size:14px;
+    }
+
+    .price-btn{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .price-btn button{
+
+        width:100%;
+    }
+    /* ================= CHEF BANNER ================= */
+     .chef-banner{
+
+        padding:90px 0;
+    }
+
+    .chef-content h2{
+
+        font-size:3rem;
+    }
+    .chef-content a{
+
+      margin-bottom:50px;
+   }
+   /* ================= RESERVATION STRIP ================= */
+   .reservation-strip{
+
+        padding:50px 0;
+    }
+    /* .reservation-content a{
+
+      margin-bottom:62px;
+
+   } */
+
+    .reservation-content h2{
+
+        font-size:2.2rem;
+    }
+
+    .reservation-content p{
+         max-width:300px;
+        margin:auto;
+        margin-bottom: 5px;
+        font-size:15px;
+
+        padding:0 10px;
+    }
+    /* ================= FOOTER ================= */
+   .footer{
+
+        text-align:center;
+
+        padding:60px 0 70px;
+    }
+
+    .footer-text{
+
+        margin:auto;
+
+        max-width:280px;
+
+        font-size:15px;
+
+        line-height:1.8;
+    }
+
+    .footer h4{
+
+        margin-top:5px;
+    margin-bottom:12px;
+    }
+    .footer ul{
+    margin-bottom:10px;
+}
+
+.footer ul li{
+    margin-bottom:8px;
+}
+
+    .footer .col-md-6{
+
+        margin-bottom:-30px;
+    }
+
+    .footer-bottom{
+
+        padding-bottom:40px;
+    }
+
+}
